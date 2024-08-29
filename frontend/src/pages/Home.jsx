@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5555/books")
+      .get("https://book-store-back-3e5x.onrender.com")
       .then((res) => {
         setBooks(res.data);
         setLoading(false);
