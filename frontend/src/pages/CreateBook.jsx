@@ -16,7 +16,7 @@ const CreateBook = () => {
     const data = { title, author, publishYear };
     setLoading(true);
     axios
-      .post("http://localhost:5555/books", data)
+      .post("https://book-store-back-3e5x.onrender.com", data)
       .then(() => {
         setLoading(false);
         // alert("Book added");
